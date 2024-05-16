@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+} 
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(9, 9, 67);
+}
+
+li {
+    list-style-type: none;
+
+}
+
+.content{
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+}
+
+aside{
+    min-width: 50%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+    height: 50vh;
+}
+
+.main-content{
+    min-width: 50%;
+    padding: 6rem;
+}
+
+.title{
+    font-size: 32px;
+}
+
+.big-title{
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+
+.big-title-first{
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 3rem;
+}
+
+.subtitle{
+    font-size: 28px;
+}
+
+.ex-item{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0;
+}
+
+.ex-item span {
+    min-width: 30%;
+}
+
+
+
+.pr-item{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0;
+}
+
+.pr-img{
+    margin-right: 2rem;
+}
+
+.tech-stack{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experience-title, .project-title {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+
+.tech{
+    color: rgb(163, 163, 255);
+    background-color: blue;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 10px 10px 10px 0;
+}
+
+#about{
+    margin-bottom: 8rem;
+}
+
+#experience {
+    margin-bottom: 8rem;
+}
+
+.intro{
+    margin-bottom: 1rem;
+    padding: 0 4rem;
+}
+
+.title{
+    margin-bottom: 1rem;
+}
+
+.subtitle{
+    margin-bottom: 1rem;
+
+}
+
+.who{
+    margin-bottom: 1rem;
+}
+
+#navlist li{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+#navlist li:hover{
+    text-decoration: underline;
+}
+
+.headicon{
+    display: flex;
+}
+
+.headicon > li{
+    margin: 0 0.5rem;
+}
+
+header{
+
+    padding: 1rem;
+    min-width: 100vw;
+    background-color: rgb(9, 9, 67);;
+    height: 4rem;
+    top: 0; 
+
+    position: sticky;
+    top: 0;
+    /* z-index: 100; */
+    z-index: 2;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+}
+
+
+footer{
+    min-width: 100vw;
+    position: sticky;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1289px;
+    margin: 0 auto;red;
+    padding: 1rem 2rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+.me{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 2rem;
+}
+
+.me-text{
+    margin-top: 4rem;
+
+}
+
+.footer-text{
+    display: flex; justify-content: space-between; width: 50%; padding: 0 1rem
+}
+
+#bar-button{
+    visibility: hidden;
+    display: none;
+}
+
+.side-menu{
+    visibility: hidden;
+    display: none;
+    transition: all 0.3s ease;
+
+}
+
+@media (max-width: 767px) {
+    .content{
+        display: block;
+    }
+    .me{
+        margin-right: 4rem;
+    }
+    aside {
+        position: relative;
+        margin: 2rem 0;
+        height: fit-content;
+    }
+    .main-content{
+        margin: 0;
+    }
+    footer{
+        position: relative;
+    }
+    .footer-text{
+        width: 100%;
+    }
+    
+    .nav-option{
+        visibility: hidden;
+        display: none;
+        height: 0;
+    }
+    .headicon{
+        display: none;
+        visibility: hidden;
+    }
+    .title, .subtitle{
+        font-size: 1.5rem;
+    }
+    #bar-button{
+        visibility:visible;
+        display: block;
+    }
+
+    .side-menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: rgb(9, 9, 67);
+        display: flex;
+        flex-direction: column;
+    }
+    .side-menu li {
+        width: 100%;
+        font-size: 3rem;
+        text-align: center;
+        padding: 4rem 0;
+        margin: 0;
+    }
+    
+    .side-menu li:hover{
+        background-color: rgb(26, 26, 176);;
+    }
+    
+  }
